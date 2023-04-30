@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+const container = document.body;
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>virtual keyboard</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="../src/assets/favicon/site.webmanifest">
-</head>
-
-<body>
-  <!-- <div class="wrapper">
+const templateHTML = ` <div class="wrapper">
     <h1 class="title">Виртуальная клавиатура</h1>
     <textarea class="textarea" name="text" id="text" cols="50" rows="5"></textarea>
     <div class="keyboard" id="keyboard">
@@ -222,11 +209,11 @@
         </div>
       </div>
     </div>
-    <p class="description">Клавиатура создана в операционной системе Mac
-    </p>
-    <p class="language">Для переключения языка: клавиша Fn в левом нижнем углу</p>
-  </div> -->
-  <script type="module" src="./index.js"></script>
-</body>
-
-</html>
+        <p class="description">Клавиатура создана в операционной системе Mac OS</p>
+        <p class="language">Для переключения языка: клавиша Fn в левом нижнем углу</p>
+  </div>
+`;
+function renderKeyboard() {
+  container.insertAdjacentHTML('beforeend', templateHTML);
+}
+export default renderKeyboard;

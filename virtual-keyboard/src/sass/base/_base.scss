@@ -1,10 +1,8 @@
 html {
+  // font-size: 62.5%; //10px
   font-size: 62.5%; //10px
   font-family: 'Georgia-normal', 'Verdana', sans-serif;
-  background-color: $color-bg;
-  @include laptop {
-    font-size: 45%;
-  }
+  background-color:#212729e0;
 }
 
 h1,
