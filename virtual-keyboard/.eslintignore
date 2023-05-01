@@ -1,0 +1,9 @@
+node_modules
+/.vscode
+/.git
+dist/
+build/
+*.log
+config
+package.json
+src/data.json
