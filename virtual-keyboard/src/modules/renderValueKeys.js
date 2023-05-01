@@ -1,17 +1,12 @@
 import data from '../data.json';
-const valueKeys = data;
 
-console.log(valueKeys);
-function renderValueKeys(language){
-  let i = 0;
-  for(let key in valueKeys){
-    let keys = document.querySelectorAll(".key");
-    console.log(keys);
-    i++;
+function renderValueKeys(language) {
+  const valueKeys = Object.entries(data);
+  const keys = document.querySelectorAll('.key');
+
+  for (let i = 0; i < keys.length; i++) {
+    keys[i].innerText = `${valueKeys[i][1][language]}`;
   }
 }
 
-
 export default renderValueKeys;
-
-

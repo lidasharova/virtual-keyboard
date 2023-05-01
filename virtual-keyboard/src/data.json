@@ -428,21 +428,21 @@
     "shift-english": ""
   },
   "ArrowUp": {
-    "class": "Slash",
+    "class": "ArrowUp",
     "russian": "▲",
     "english": "▲",
     "shift-russian": "▲",
     "shift-english": "▲"
   },
   "ArrowDown": {
-    "class": "Slash",
+    "class": "ArrowDown",
     "russian": "▼",
     "english": "▼",
     "shift-russian": "▼",
     "shift-english": "▼"
   },
   "ArrowRight": {
-    "class": "Slash",
+    "class": "ArrowRight",
     "russian": "►",
     "english": "►",
     "shift-russian": "►",
