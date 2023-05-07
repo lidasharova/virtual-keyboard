@@ -1,6 +1,6 @@
 # [virtual-keyboard](https://lidasharova.github.io/virtual-keyboard/virtual-keyboard/)
 
-- [x] the virtual keyboard is able to switch between two language layouts (English + any other language).
+- [x] the virtual keyboard is able to switch between two language layouts (English + Russian).
 - [x] the buttons on the virtual keyboard display symbols of a selected language
 - [x] the application saves a chosen language after the page is reloaded and displays the keyboard on that language
 - [x] the keyboard shortcut for changing language indicate on the page.
