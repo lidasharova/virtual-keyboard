@@ -1,0 +1,188 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem 4rem;
+}
+
+.title {
+  font-family: 'Georgia-bold', Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.textarea {
+  display: block;
+  width: 700px;
+  height: 250px;
+  margin: 10px auto 10px;
+  padding: 3rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  caret-color: rgb(14, 14, 96);
+  &:focus {
+    border: 2px solid rgb(230, 133, 235);
+    background-color: rgb(236, 244, 244);
+    outline: none;
+  }
+}
+
+.keyboard {
+  width: 704px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  background: #acacac;
+  background-image: linear-gradient(to right, #ff0090cd, #ffff00b8, #00fff7a6);
+  border: 0.3rem solid #222222;
+  border-radius: 0.5rem;
+}
+
+.keyboard__row {
+  clear: both;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.keyboard__key {
+  font-family: 'Arial', Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 6px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  background: #444444;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  transition: border-radius 0.3s, background-color 0.3s;
+}
+
+
+.key:not(.no-input) {
+  font-size: 13px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 9px !important;
+  line-height: 20px !important;
+}
+
+.key.active {
+  background: rgb(2, 92, 2);
+  box-shadow: 0px 0px 5px #888;
+  transform: translateY(2px);
+}
+
+.hidden {
+  display: none;
+}
+
+.Backspace,
+.Tab {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 15%;
+}
+
+.CapsLock,
+.Enter {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 13%;
+}
+
+.ShiftLeft,
+.ShiftRight {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 16%;
+}
+
+.Space {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 260px;
+}
+
+.MetaLeft,
+.MetaRight {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 10%;
+}
+
+.Fn,
+.ControlLeft,
+.AltLeft,
+.AltRight,
+.ControlRight {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 7%;
+}
+
+.ArrowLeft,
+.ArrowUp,
+.ArrowDown,
+.ArrowRight {
+  background: #222222;
+  color: white;
+  flex-shrink: 1;
+  width: 37px !important;
+  height: 19px !important;
+  line-height: 20px;
+}
+
+.ArrowDown {
+  margin-top: 2px;
+}
+
+.ArrowLeft,
+.ArrowRight {
+  align-self: flex-end;
+}
+
+.arrow__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.description,
+.language {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.description {
+  margin-top: 60px;
+}
